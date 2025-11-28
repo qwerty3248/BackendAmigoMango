@@ -1,0 +1,9 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    environment:
+      - DATABASE_URL=postgresql://neondb_owner:npg_b9WQ6yZtxpqE@ep-holy-silence-agiq4waf-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+    ports:
+      - "5000:5000"
+    restart: always
